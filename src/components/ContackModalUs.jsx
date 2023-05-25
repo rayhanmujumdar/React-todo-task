@@ -53,6 +53,7 @@ export default function Modal() {
 
             <div className="modal-footer">
               <button
+              style={{background: '#ff7f50'}}
                 className="btn btn-primary"
                 data-bs-target="#exampleModalToggle2"
                 data-bs-toggle="modal"

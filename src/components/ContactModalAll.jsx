@@ -61,6 +61,7 @@ export default function ContactModalAll() {
           <div className="modal-footer">
             <button
               className="btn btn-primary"
+              style={{background: '#46139f'}}
               data-bs-target="#exampleModalToggle"
               data-bs-toggle="modal"
               data-bs-dismiss="modal"
