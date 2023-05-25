@@ -6,10 +6,10 @@ export const apiSlice = createApi({
   }),
   endpoints: (builder) => ({
     getAllCountryContacts: builder.query({
-      query: (page) => `/contacts/?format=json&page=${page}`,
+      query: (page) => `/contacts/?format=json&page=${page || 1}`,
     }),
     getUSCountryContacts: builder.query({
-      query: (page) => `/country-contacts/United%20States/?format=json&page=${page}`,
+      query: (page) => `/country-contacts/United%20States/?format=json&page=${page || 1}`,
     }),
     getContact: builder.query({
       query: () => ``,
