@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import checkStatus from "../utils/checkStatus";
 import { useDispatch, useSelector } from "react-redux";
-import { todoAdded } from "../feature/todos/todoSlice";
-import { toggleList } from "../feature/filter/filterSlice";
+import { todoAdded } from "../feature/problem1/todos/todoSlice";
+import { toggleList } from "../feature/problem1/filter/filterSlice";
 
 const Problem1 = () => {
   const [show, setShow] = useState("all");
@@ -34,7 +34,6 @@ const Problem1 = () => {
     setStatus("");
     setError("");
   };
-  console.log(todos);
   let content = todos
     .filter((todo) => {
       if (todo.status === statusList) {
